@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 14px;
+  
+  
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243, 243, 243);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 60%;
+  height: 100vh;
+  
+  
+}
+.instagram-phone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+
+}
+.instagram-phone img{
+  height: 50rem;
+  
+}
+.instagram-continue {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+  
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgrey;
+  margin-bottom: 10px;
+
+}
+.group:nth-child(1){
+  font-weight: 550;
+  min-height: 19rem;
+
+}
+
+.instagram-logo{
+  max-width: 15rem;
+}
+.profile-photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-photo img{
+  height: 10rem;
+}
+
+.instagram-login {
+  margin-top: 1rem;
+  text-decoration: none;
+  background-color: #0095f6;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.instagram-logout{
+  text-decoration: none;
+  color: #0095f6;
+  margin-top: 1rem;
+}
+
+.not-account{
+  color: rgb(160, 160, 160);
+
+}
+
+.link-blue{
+  font-weight: 550;
+  color: #0095f6;
+}
+
+.get-the-app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+
+}
+.get-the-app p{
+  font-weight: 600;
+}
+
+
+.download{
+  margin-top: 5px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+
+  
+}
+
+.app-download{
+  height: 4rem;
+  width: 10rem;
+  background-size: cover;
+}
+
+.app-download:nth-child(1){
+  background-image: url(./img/botao-appstore.png);
+}
+
+.app-download:nth-child(2){
+  background-image: url(./img/botao-playstore.png);
+}
+
+@media (max-width: 1024px){
+  .instagram-wrapper{
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px){
+  .instagram-wrapper{
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  .instagram-phone{
+    display: none;
+    position: relative;
+  }
+  .instagram-continue{
+    width: 80%;
+  }
+}
